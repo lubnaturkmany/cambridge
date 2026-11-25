@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambridge Accreditation System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#home" class="logo">Cambridge</a>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#training-center">Training Centers</a></li>
+                <li><a href="#trainers">Trainers</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="home-section">
+            <div class="home-content">
+                <h1>Welcome to Cambridge Accreditation System</h1>
+
+                <p>
+                    The Cambridge Accreditation System provides
+                    a framework for recognizing and evaluating
+                    educational and training institutions.
+                </p>
+
+                <p>
+                    Our platform helps users explore accredited
+                    training centers and discover qualified trainers
+                    in one organized place.
+                </p>
+
+                <div class="home-buttons">
+                    <a href="#training-center" class="btn">
+                        View Training Center
+                    </a>
+
+                    <a href="#trainers" class="btn secondary-btn">
+                        View Trainers
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="training-center" class="centers-section">
+            <h2>Accredited Training Centers</h2>
+
+            <p class="section-description">
+                Explore our active and accredited training centers.
+            </p>
+            
+            <div class="search-wrapper">
+                <span class="search-icon">⌕</span>
+                <input
+                    type="text"
+                    id="center-search"
+                    class="search-input"
+                    placeholder="Search training centers..."
+                >
+            </div>
+
+            <div id="centers-container" class="centers-container"></div>
+        </section>
+
+        <section id="trainers" class="trainers-section">
+            <h2>Our Accredited Trainers</h2>
+
+            <p class="section-description">
+                Meet our active and accredited professional trainers.
+            </p>
+
+            <div class="search-wrapper">
+                <span class="search-icon">⌕</span>
+                <input
+                    type="text"
+                    id="trainer-search"
+                    class="search-input"
+                    placeholder="Search trainers..."
+                >
+            </div>
+
+            <div id="trainers-container" class="trainers-container"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>
+            Cambridge Accreditation System
+            &copy; <span id="currentYear"></span>
+        </p>
+
+    </footer>
+
+    <script src="script.js" defer></script>
+    
+</body>
+</html>
